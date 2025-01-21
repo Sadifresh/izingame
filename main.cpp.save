@@ -42,7 +42,7 @@ Button btn = {180, 110, 200, 100, "Старт", true};
 Button btn1 = {180, 220, 200, 100, "Правила", true};
 Button btn2 = {180, 330, 200, 100, "Об авторе", true};
 Button btn3 = {180, 440, 200, 100, "Выход", true};
-HDC fon = txLoadImage("Безымянный.bmp")
+
 
     while(!btn3.click())
     {
@@ -142,12 +142,29 @@ HDC fon = txLoadImage("Безымянный.bmp")
         if(PAGE == "game")
         {
             txSetColor (TX_BLACK);
-            txTextOut(200, 50, "Пожалуйста подождите...");
             if(GetAsyncKeyState(VK_ESCAPE))
             {
                 PAGE = "menu";
             }
-            txSetFillColor (TX_YELLOW);
+            txSetFillColor (TX_WHITE);
+            txLine(1,645,1500,645);
+            txLine(13,645,120,750);
+            txLine(120,750,285,645);
+            txLine(285,645,395,750);
+            txLine(395,750,555,645);
+            txLine(555,645,665,750);
+            txLine(665,750,820,645);
+            txLine(820,645,935,750);
+            txLine(935,750,1085,645);
+            txLine(1085,645,1205,750);
+            txLine(1205,750,1360,645);
+            txLine(1360,645,1470,750);
+            txLine(1470,750,1500,718);
+            txLine(1,370,1500,370);
+            txRectangle(165,370,280,280);
+            txRectangle(565,370,680,280);
+            txRectangle(,370,,280);
+
         }
 
 
