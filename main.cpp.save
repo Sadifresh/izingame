@@ -43,6 +43,8 @@ Button btn1 = {180, 220, 200, 100, "Правила", true};
 Button btn2 = {180, 330, 200, 100, "Об авторе", true};
 Button btn3 = {180, 440, 200, 100, "Выход", true};
 
+HDC Fon = txLoadImage("Pictures/Fon.bmp");
+
 
     while(!btn3.click())
     {
@@ -118,6 +120,13 @@ Button btn3 = {180, 440, 200, 100, "Выход", true};
         {
             txSetColor (TX_BLACK);
             txTextOut(0, 0, "Страница правил");
+            txTextOut(750,250,"Правила:");
+            txTextOut(430,280,"1.нельзя всё время стрелять в туннели если противники так и не вышли ");
+            txTextOut(430,295,"2.нельзя поменять вид лица (игра идет от 1 лица)");
+            txTextOut(430,310,"3.новое оружие будет падать с монстров иначе его заполучить нельзя");
+            txTextOut(430,325,"4. нельзя использовать какие-либо баффы");
+            txTextOut(415,340,"5. если ты погиб то тебе нельзя будет продолжить, только начать новую игру");
+
             if(GetAsyncKeyState(VK_ESCAPE))
             {
                 PAGE = "menu";
@@ -131,6 +140,8 @@ Button btn3 = {180, 440, 200, 100, "Выход", true};
         {
             txSetColor (TX_BLACK);
             txTextOut(0, 0, "ОБ АВТОРЕ");
+            txTextOut(315, 200, "Автор Рубцов Александр");
+            txTextOut(3, 200, "пароль 1654");
             if(GetAsyncKeyState(VK_ESCAPE))
             {
                 PAGE = "menu";
@@ -146,6 +157,7 @@ Button btn3 = {180, 440, 200, 100, "Выход", true};
             {
                 PAGE = "menu";
             }
+            /*
             txSetFillColor (TX_WHITE);
             txLine(1,645,1500,645);
             txLine(13,645,120,750);
@@ -161,9 +173,20 @@ Button btn3 = {180, 440, 200, 100, "Выход", true};
             txLine(1360,645,1470,750);
             txLine(1470,750,1500,718);
             txLine(1,370,1500,370);
+            txLine(0,475,410,370);
+            txLine(0,620,630,370);
+            txLine(365,645,860,370);
+            txLine(800,645,1080,370);
+            txLine(1160,645,1310,370);
+            txLine(1445,645,1500,475);
             txRectangle(165,370,280,280);
             txRectangle(565,370,680,280);
-            txRectangle(,370,,280);
+            txRectangle(565+400,370,680+400,280);
+            txRectangle(565+700,370,680+700,280);
+            */
+
+            txBitBlt(txDC(), 0, 0, 1500, 750, Fon);
+
 
         }
 
@@ -175,7 +198,7 @@ Button btn3 = {180, 440, 200, 100, "Выход", true};
     }
 
 
-
+    txDeleteDC(Fon);
 
 
     txDisableAutoPause();
