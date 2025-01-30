@@ -9,9 +9,13 @@ struct Button
     int h;
     const char* text;
     bool visible;
+    HDC image;
+    HDC image_run;
+    HDC image_jump;
 
     void draw()
     {
+    txTransparentBlt(txDC(), x, y, w, h ,image, 0, 0, TX_WHITE);
     txSetColor (TX_WHITE, 2);
     txSetFillColor (TX_RED);
     Win32::RoundRect (txDC(), x, y, x+w, y+h, 30, 30);
@@ -36,6 +40,7 @@ int main()
 txCreateWindow (1500, 750);
 txTextCursor (false);
 
+Mario mario = {0, 164, 100, 100, txLoadImage("Done_run1.bmp"), txLoadImage("mario_run.bmp"), txLoadImage("mario_jump.bmp")};
 string PAGE = "menu";
 
 Button btn = {180, 110, 200, 100, "Старт", true};
@@ -44,7 +49,7 @@ Button btn2 = {180, 330, 200, 100, "Об авторе", true};
 Button btn3 = {180, 440, 200, 100, "Выход", true};
 
 HDC Fon = txLoadImage("Pictures/Fon.bmp");
-
+HDC Done = txLoadImage("Pictures/Done.bmp");
 
     while(!btn3.click())
     {
@@ -138,18 +143,21 @@ HDC Fon = txLoadImage("Pictures/Fon.bmp");
 
         if(PAGE == "about")
         {
+            txBitBlt(txDC(), 0, 0, 1500, 750, Done);
             txSetColor (TX_BLACK);
             txTextOut(100, 0, "ОБ АВТОРЕ");
-            txTextOut(315, 200, "Автор Рубцов Александр");
+            txTextOut(315, 200, "Автор Александр, остальное тебе не надо");
             txTextOut(315, 215, "пароль 1654");
             txTextOut(315, 230, "что обо мне да обо мне");
             txTextOut(315,245,"говори свои данные");
+
+
 
             if(GetAsyncKeyState(VK_ESCAPE))
             {
                 PAGE = "menu";
             }
-            txSetFillColor (TX_LIGHTCYAN);
+            txSetFillColor (TX_WHITE);
         }
 
 //Игра
