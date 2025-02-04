@@ -9,13 +9,10 @@ struct Button
     int h;
     const char* text;
     bool visible;
-    HDC image;
-    HDC image_run;
-    HDC image_jump;
 
     void draw()
     {
-    txTransparentBlt(txDC(), x, y, w, h ,image, 0, 0, TX_WHITE);
+    txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
     txSetColor (TX_WHITE, 2);
     txSetFillColor (TX_RED);
     Win32::RoundRect (txDC(), x, y, x+w, y+h, 30, 30);
@@ -34,13 +31,35 @@ struct Button
 
 };
 
+struct Done
+{
+      int x;
+      int y;
+      int w;
+      int h;
+      HDC image;
+      HDC image_run1;
+      HDC image_run2;
+      HDC image_walk1;
+      HDC image_walk2;
+
+      void draw()
+      {
+        txTransparentBlt(txDC(), x, y, w, h ,image, 0, 0, TX_WHITE);
+      }
+
+};
+
+
+
 
 int main()
 {
 txCreateWindow (1500, 750);
 txTextCursor (false);
 
-Mario mario = {0, 164, 100, 100, txLoadImage("Done_run1.bmp"), txLoadImage("mario_run.bmp"), txLoadImage("mario_jump.bmp")};
+Done done = {0, 164, 100, 100, txLoadImage("Done_run1.bmp"), txLoadImage("Done_run1.bmp"), txLoadImage("Done_run2.bmp"), txLoadImage("Done_walk1.bmp"), txLoadImage("Done_walk2.bmp")};
+
 string PAGE = "menu";
 
 Button btn = {180, 110, 200, 100, "Старт", true};
@@ -120,6 +139,7 @@ HDC Done = txLoadImage("Pictures/Done.bmp");
 
 
 
+
 //Правила
         if(PAGE == "rules")
         {
@@ -165,9 +185,13 @@ HDC Done = txLoadImage("Pictures/Done.bmp");
         {
             txSetColor (TX_BLACK);
             if(GetAsyncKeyState(VK_ESCAPE))
-            {
+            {{
+
+        
                 PAGE = "menu";
             }
+            while(!GetAsyncKeyState(VK_ESCAPE))
+
             /*
             txSetFillColor (TX_WHITE);
             txLine(1,645,1500,645);
@@ -200,6 +224,7 @@ HDC Done = txLoadImage("Pictures/Done.bmp");
 
 
         }
+
 
 
 
