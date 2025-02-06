@@ -12,12 +12,11 @@ struct Button
 
     void draw()
     {
-    txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
-    txSetColor (TX_WHITE, 2);
-    txSetFillColor (TX_RED);
-    Win32::RoundRect (txDC(), x, y, x+w, y+h, 30, 30);
-    txSelectFont("Courier", 20);
-    txDrawText(x, y, x+w, y+h, text);
+        txSetColor (TX_WHITE, 2);
+        txSetFillColor (TX_RED);
+        Win32::RoundRect (txDC(), x, y, x+w, y+h, 30, 30);
+        txSelectFont("Courier", 20);
+        txDrawText(x, y, x+w, y+h, text);
     }
 
     bool click()
@@ -48,9 +47,8 @@ struct Done
         txTransparentBlt(txDC(), x, y, w, h ,image, 0, 0, TX_WHITE);
       }
 
+
 };
-
-
 
 
 int main()
@@ -58,7 +56,14 @@ int main()
 txCreateWindow (1500, 750);
 txTextCursor (false);
 
-Done done = {0, 164, 100, 100, txLoadImage("Done_run1.bmp"), txLoadImage("Done_run1.bmp"), txLoadImage("Done_run2.bmp"), txLoadImage("Done_walk1.bmp"), txLoadImage("Done_walk2.bmp")};
+
+Done done = {0, 164, 74, 129,
+                txLoadImage("Images/Done_run1.bmp"),
+                txLoadImage("Images/Done_run1.bmp"),
+                txLoadImage("Images/Done_run2.bmp"),
+                txLoadImage("Images/Done_walk1.bmp"),
+                txLoadImage("Images/Done_walk2.bmp")};
+
 
 string PAGE = "menu";
 
@@ -67,8 +72,8 @@ Button btn1 = {180, 220, 200, 100, "Правила", true};
 Button btn2 = {180, 330, 200, 100, "Об авторе", true};
 Button btn3 = {180, 440, 200, 100, "Выход", true};
 
-HDC Fon = txLoadImage("Pictures/Fon.bmp");
-HDC Done = txLoadImage("Pictures/Done.bmp");
+HDC Fon = txLoadImage("Images/Fon.bmp");
+HDC Done = txLoadImage("Images/Done.bmp");
 
     while(!btn3.click())
     {
@@ -82,14 +87,10 @@ HDC Done = txLoadImage("Pictures/Done.bmp");
             btn2.draw();
             btn3.draw();
 
-
             btn.visible=true;
             btn1.visible=true;
             btn2.visible=true;
             btn3.visible=true;
-
-
-
 
             if(btn.click())
             {
@@ -102,9 +103,6 @@ HDC Done = txLoadImage("Pictures/Done.bmp");
 
 
             }
-
-
-
 
             if(btn1.click())
             {
@@ -128,9 +126,9 @@ HDC Done = txLoadImage("Pictures/Done.bmp");
 
             }
 
-        txSetFillColor (TX_BLACK);
+            txSetFillColor (TX_BLACK);
 
-       }
+        }
 
 
 
@@ -186,10 +184,9 @@ HDC Done = txLoadImage("Pictures/Done.bmp");
             txSetColor (TX_BLACK);
             if(GetAsyncKeyState(VK_ESCAPE))
             {
-
-
                 PAGE = "menu";
             };
+            /*
             txSetFillColor (TX_WHITE);
             txLine(1,645,1500,645);
             txLine(13,645,120,750);
@@ -218,6 +215,7 @@ HDC Done = txLoadImage("Pictures/Done.bmp");
             */
 
             txBitBlt(txDC(), 0, 0, 1500, 750, Fon);
+            done.draw();
 
 
         }
@@ -231,10 +229,9 @@ HDC Done = txLoadImage("Pictures/Done.bmp");
     }
 
 
-    txDeleteDC(Fon);
+txDeleteDC(Fon);
 
 
-    txDisableAutoPause();
-
-    return 0;
+txDisableAutoPause();
+return 0;
 }

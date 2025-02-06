@@ -48,9 +48,8 @@ struct Done
         txTransparentBlt(txDC(), x, y, w, h ,image, 0, 0, TX_WHITE);
       }
 
+
 };
-
-
 
 
 int main()
@@ -58,7 +57,9 @@ int main()
 txCreateWindow (1500, 750);
 txTextCursor (false);
 
+
 Done done = {0, 164, 100, 100, txLoadImage("Done_run1.bmp"), txLoadImage("Done_run1.bmp"), txLoadImage("Done_run2.bmp"), txLoadImage("Done_walk1.bmp"), txLoadImage("Done_walk2.bmp")};
+
 
 string PAGE = "menu";
 
@@ -185,13 +186,11 @@ HDC Done = txLoadImage("Pictures/Done.bmp");
         {
             txSetColor (TX_BLACK);
             if(GetAsyncKeyState(VK_ESCAPE))
-            {{
+            {
 
-        
+
                 PAGE = "menu";
-            }
-            while(!GetAsyncKeyState(VK_ESCAPE))
-
+            };
             /*
             txSetFillColor (TX_WHITE);
             txLine(1,645,1500,645);
