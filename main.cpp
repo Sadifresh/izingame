@@ -34,36 +34,70 @@ struct Done
 {
       int x;
       int y;
-      int w;
-      int h;
       HDC image;
-      HDC image_run1;
-      HDC image_run2;
-      HDC image_walk1;
-      HDC image_walk2;
+      HDC run_left;
+      HDC run_right;
+      HDC run_forward;
+      HDC run_back;
+      int n_cadr;
 
       void draw()
       {
-        txTransparentBlt(txDC(), x, y, w, h ,image, 0, 0, TX_WHITE);
+        txTransparentBlt(txDC(), x, y, 98, 172 ,image, n_cadr*98, 0, TX_WHITE);
       }
 
+    void animation()
+    {
+        n_cadr += 1;
+        if (n_cadr >= 3)
+        {
+            n_cadr = 0;
+        }
+    }
+
+};
+
+struct Vag
+{
+    int x;
+    int y;
+    HDC image;
+    int n_cadr;
+
+    void draw()
+    {
+        txTransparentBlt(txDC(), x, y, 100, 113 ,image, n_cadr*100, 0, TX_WHITE);
+    }
+
+    void animation()
+    {
+        n_cadr += 1;
+        if (n_cadr >= 3)
+        {
+            n_cadr = 0;
+        }
+    }
 
 };
 
 
+
 int main()
 {
-txCreateWindow (1500, 750);
+txCreateWindow (1366, 768);
 txTextCursor (false);
 
+int n_cadr = 0;
 
-Done done = {0, 164, 74, 129,
-                txLoadImage("Images/Done_run1.bmp"),
-                txLoadImage("Images/Done_run1.bmp"),
-                txLoadImage("Images/Done_run2.bmp"),
-                txLoadImage("Images/Done_walk1.bmp"),
-                txLoadImage("Images/Done_walk2.bmp")};
+Done done = {600,  768,
+                txLoadImage("Images/run_forward_cadr.bmp"),
+                txLoadImage("Images/run_left_cadr.bmp"),
+                txLoadImage("Images/run_right_cadr.bmp"),
+                txLoadImage("Images/run_forward_cadr.bmp"),
+                txLoadImage("Images/run_back_cadr.bmp"), 0};
 
+
+Vag vag = {1400, 650, txLoadImage("Images/vag.bmp"), 0};
 
 string PAGE = "menu";
 
@@ -72,8 +106,10 @@ Button btn1 = {180, 220, 200, 100, "Правила", true};
 Button btn2 = {180, 330, 200, 100, "Об авторе", true};
 Button btn3 = {180, 440, 200, 100, "Выход", true};
 
-HDC Fon = txLoadImage("Images/Fon.bmp");
+HDC Fon = txLoadImage("Images/Fone.bmp");
 HDC Done = txLoadImage("Images/Done.bmp");
+HDC Vag = txLoadImage("Images/vda.bmp");
+int x_fon = 0;
 
     while(!btn3.click())
     {
@@ -142,6 +178,7 @@ HDC Done = txLoadImage("Images/Done.bmp");
         if(PAGE == "rules")
         {
             txSetColor (TX_BLACK);
+            txBitBlt(txDC(), 0, 0, 1366, 768,Vag);
             txTextOut(100, 0, "Страница правил");
             txTextOut(750,250,"Правила:");
             txTextOut(430,280,"1.нельзя всё время стрелять в туннели если противники так и не вышли ");
@@ -186,36 +223,49 @@ HDC Done = txLoadImage("Images/Done.bmp");
             {
                 PAGE = "menu";
             };
-            /*
-            txSetFillColor (TX_WHITE);
-            txLine(1,645,1500,645);
-            txLine(13,645,120,750);
-            txLine(120,750,285,645);
-            txLine(285,645,395,750);
-            txLine(395,750,555,645);
-            txLine(555,645,665,750);
-            txLine(665,750,820,645);
-            txLine(820,645,935,750);
-            txLine(935,750,1085,645);
-            txLine(1085,645,1205,750);
-            txLine(1205,750,1360,645);
-            txLine(1360,645,1470,750);
-            txLine(1470,750,1500,718);
-            txLine(1,370,1500,370);
-            txLine(0,475,410,370);
-            txLine(0,620,630,370);
-            txLine(365,645,860,370);
-            txLine(800,645,1080,370);
-            txLine(1160,645,1310,370);
-            txLine(1445,645,1500,475);
-            txRectangle(165,370,280,280);
-            txRectangle(565,370,680,280);
-            txRectangle(565+400,370,680+400,280);
-            txRectangle(565+700,370,680+700,280);
-            */
 
-            txBitBlt(txDC(), 0, 0, 1500, 750, Fon);
+            txBitBlt(txDC(), x_fon, 0, 10852, 750, Fon);
             done.draw();
+            done.image = done.run_forward;
+
+            if(GetAsyncKeyState('D'))
+            {
+                 x_fon -= 10;
+                 done.image = done.run_right;
+                 done.animation();
+                 txSleep(10);
+
+            }
+
+            if(GetAsyncKeyState('A'))
+
+            {
+                 x_fon +=10;
+                 done.image = done.run_left;
+                 done.animation();
+                 txSleep(10);
+                 if(x_fon>0) x_fon=0;
+            }
+
+            done.y += 80;                                    //гравитация
+
+            if(done.y > 600)                               //уровень земли
+            {
+                done.y =  600;
+                //done.image = done.run_right;
+            }
+
+
+            vag.draw();
+            vag.animation();
+            vag.x -= 10;
+            if(vag.x<0)
+            {
+                vag.x = 1200;
+            }
+
+
+
 
 
         }
@@ -224,8 +274,14 @@ HDC Done = txLoadImage("Images/Done.bmp");
 
 
 
+
+
+
+
+
+
     txEnd();
-    txSleep(10);
+    txSleep(50);
     }
 
 
