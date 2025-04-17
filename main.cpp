@@ -139,16 +139,16 @@ Vag vag = {1400, 650, txLoadImage("Images/vag.bmp"), 0, true};
 Knife knife = {0, 0, txLoadImage("Images/knife.bmp"), false, 0};
 int count_box = 12;
 Box box[count_box];
-box[0] = {700, 600, 148, 141,  txLoadImage("Images/box3.bmp")};
+box[0] = {700, 600, 73, 143,  txLoadImage("Images/box2.bmp")};
 box[1] = {1400, 600, 143, 142,  txLoadImage("Images/box4.bmp")};
 box[2] = {2100, 600+72, 75, 72,  txLoadImage("Images/box1.bmp")};
 box[3] = {2800, 600, 73, 143, txLoadImage("Images/box2.bmp")};
-box[4] = {3500, 600, 148, 141,  txLoadImage("Images/box3.bmp")};
+box[4] = {3500, 600, 143, 142,  txLoadImage("Images/box4.bmp")};
 box[5] = {4200, 600+72, 75, 72,  txLoadImage("Images/box1.bmp")};
 box[6] = {4900, 600, 73, 143, txLoadImage("Images/box2.bmp")};
 box[7] = {5600, 600, 143, 142,  txLoadImage("Images/box4.bmp")};
 box[8] = {6300, 600, 73, 143, txLoadImage("Images/box2.bmp")};
-box[9] = {7000, 600, 148, 141,  txLoadImage("Images/box3.bmp")};
+box[9] = {7000, 600+72, 75, 72,  txLoadImage("Images/box1.bmp")};
 box[10] = {7700, 600, 143, 142,  txLoadImage("Images/box4.bmp")};
 box[11] = {8400, 600+72, 75, 72,  txLoadImage("Images/box1.bmp")};
 
@@ -157,7 +157,7 @@ string PAGE = "menu";
 
 Button btn = {180, 110, 200, 100, "Старт", true};
 Button btn1 = {180, 220, 200, 100, "Правила", true};
-Button btn2 = {180, 330, 200, 100, "Об авторе", true};
+Button btn2 = {180, 330, 200, 100, "Об игре", true};
 Button btn3 = {180, 440, 200, 100, "Выход", true};
 
 HDC Fon = txLoadImage("Images/Fone.bmp");
@@ -228,11 +228,11 @@ int x_fon = 0;
             txBitBlt(txDC(), 0, 0, 1366, 768,Vag);
             txTextOut(100, 0, "Страница правил");
             txTextOut(750,250,"Правила:");
-            txTextOut(430,280,"1.нельзя всё время стрелять в туннели если противники так и не вышли ");
-            txTextOut(430,295,"2.нельзя поменять вид лица (игра идет от 1 лица)");
-            txTextOut(430,310,"3.новое оружие будет падать с монстров иначе его заполучить нельзя");
-            txTextOut(430,325,"4. нельзя использовать какие-либо баффы");
-            txTextOut(415,340,"5. если ты погиб то тебе нельзя будет продолжить, только начать новую игру");
+            txTextOut(430,280,"1.не всегда можно прислушиваться правилам");
+            txTextOut(430,295,"2.нельзя идти влево в самом начале ");
+            txTextOut(430,310,"3.не стоит перепрыгивать персонажа vag т к можно умереть");
+            txTextOut(430,325,"4.если ты умер, то тебе надо перезайти в игру что бы начать заново");
+            txTextOut(415,340,"5.на коробки не запрыгивать, оно происходит автоматически ");
 
             if(GetAsyncKeyState(VK_ESCAPE))
             {
@@ -247,11 +247,16 @@ int x_fon = 0;
         {
             txBitBlt(txDC(), 0, 0, 1500, 750, Done);
             txSetColor (TX_BLACK);
-            txTextOut(100, 0, "ОБ АВТОРЕ");
-            txTextOut(315, 200, "Автор Александр, остальное тебе не надо");
-            txTextOut(315, 215, "пароль 1654");
-            txTextOut(315, 230, "что обо мне да обо мне");
-            txTextOut(315,245,"говори свои данные");
+            txTextOut(315, 150, "УПРАВЛЕНИЕ");
+            txTextOut(315, 200, "A - ходьба влево");
+            txTextOut(315, 215, "D - ходьба вправо");
+            txTextOut(315, 230, "W - прыжок");
+            txTextOut(315, 245, "S - атака ножом");
+            txTextOut(315, 425, "ОСТАЛЬНОЕ");
+            txTextOut(315, 475, "размеры экрана для игры 1366 на 768");
+            txTextOut(315, 505, "при движении вправо персонаж vag замедляется");
+            txTextOut(315, 490, "при движении влево персонаж vag ускоряется");
+            txTextOut(315, 520, "Автор Рубцов Александр");
 
 
 
