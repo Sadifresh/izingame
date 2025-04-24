@@ -1,0 +1,2520 @@
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1570 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:18:
+
+     16:     void draw()
+     17:     {
+=>   18:     txTransparentBlt(txDC(), x, y, w, h ,image, 0, 0, TX_WHITE);
+     19:     txSetColor (TX_WHITE, 2);
+     20:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Jan 30 2025 10:13:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Jan 30 2025 10:13:46
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1D54 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:18:
+
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+=>   18:     Win32::RoundRect (txDC(), x, y, x+w, y+h, 30, 30);
+     19:     txSelectFont("Courier", 20);
+     20:     txDrawText(x, y, x+w, y+h, text);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Jan 30 2025 10:13:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 04 2025 09:49:24
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1828 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:18:
+
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+=>   18:     Win32::RoundRect (txDC(), x, y, x+w, y+h, 30, 30);
+     19:     txSelectFont("Courier", 20);
+     20:     txDrawText(x, y, x+w, y+h, text);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Jan 30 2025 10:13:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 04 2025 09:49:35
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x16E4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  4 2025 10:01:57, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 04 2025 10:02:19
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1BB0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:48:
+
+     46:       void draw()
+     47:       {
+=>   48:         txTransparentBlt(txDC(), x, y, w, h ,image, 0, 0, TX_WHITE);
+     49:       }
+     50: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  4 2025 10:04:33, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 04 2025 10:04:55
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x9EC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:48:
+
+     46:       void draw()
+     47:       {
+=>   48:         txTransparentBlt(txDC(), x, y, w, h ,image, 0, 0, TX_WHITE);
+     49:       }
+     50: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  4 2025 10:05:17, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 04 2025 10:05:38
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x4E0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  4 2025 10:12:11, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 04 2025 10:12:33
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x10D0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  4 2025 10:12:59, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 04 2025 10:13:21
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0xA84 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  4 2025 10:16:23, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 04 2025 10:16:45
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x1408 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 09:08:02, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 09:08:31
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x10EC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 09:09:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 09:10:18
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x2E4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 09:09:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 09:12:57
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1214 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 09:13:03, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 09:13:30
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x17E4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 09:16:02, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 09:16:25
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1E14 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 09:22:02, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 09:22:26
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x9E8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 09:25:39, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 09:26:04
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1A0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 09:26:59, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 09:27:23
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1814 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 09:50:46, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 09:51:11
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x22D8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 09:51:44, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 09:52:09
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x968 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 09:53:21, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 09:53:44
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1880 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 09:54:42, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 09:55:07
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x22F4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 09:56:46, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 09:57:11
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x11CC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 09:58:24, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 09:58:48
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1C24 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 10:02:13, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 10:02:36
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0xDF8 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 10:04:28, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 10:04:52
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x4BC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 10:07:11, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 10:07:38
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x10FC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 10:09:54, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 10:10:21
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x2168 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Button::draw() at C:\Рубцов Александр\izi game\main.cpp:15:
+
+     13:     void draw()
+     14:     {
+=>   15:     txTransparentBlt(txDC(), x, y, w, h , 0, 0, TX_WHITE);
+     16:     txSetColor (TX_WHITE, 2);
+     17:     txSetFillColor (TX_RED);
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 10:10:34, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 10:11:00
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13772, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 100, 100} не полностью лежит внутри изображения-источника {0, 0, 74, 129}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1AC0 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h:13771 bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13771:
+
+  13769:         {
+  13770: $       SetLastError (ERROR_INVALID_DATA);
+=>13771: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13772:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13773:         }
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:47:
+
+     45:       void draw()
+     46:       {
+=>   47:         txTransparentBlt(txDC(), x, y, w, h ,image, 0, 0, TX_WHITE);
+     48:       }
+     49: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb  6 2025 10:14:17, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 06 2025 10:14:43
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13772, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 74, 523} не полностью лежит внутри изображения-источника {0, 0, 74, 129}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1750 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h:13771 bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13771:
+
+  13769:         {
+  13770: $       SetLastError (ERROR_INVALID_DATA);
+=>13771: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13772:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13773:         }
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:47:
+
+     45:       void draw()
+     46:       {
+=>   47:         txTransparentBlt(txDC(), x, y, w, h ,image, 0, 0, TX_WHITE);
+     48:       }
+     49: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 11 2025 09:42:17, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 11 2025 09:42:40
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13772, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {100, 0, 174, 129} не полностью лежит внутри изображения-источника {0, 0, 74, 129}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x17F8 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h:13771 bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13771:
+
+  13769:         {
+  13770: $       SetLastError (ERROR_INVALID_DATA);
+=>13771: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13772:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13773:         }
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:47:
+
+     45:       void draw()
+     46:       {
+=>   47:         txTransparentBlt(txDC(), x, y, 74, 129 ,image, n_cadr*100, 0, TX_WHITE);
+     48:       }
+     49: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 25 2025 09:18:49, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 25 2025 09:19:21
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13772, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {100, 0, 174, 129} не полностью лежит внутри изображения-источника {0, 0, 74, 129}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x4F8 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h:13771 bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13771:
+
+  13769:         {
+  13770: $       SetLastError (ERROR_INVALID_DATA);
+=>13771: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13772:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13773:         }
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:47:
+
+     45:       void draw()
+     46:       {
+=>   47:         txTransparentBlt(txDC(), x, y, 74, 129 ,image, n_cadr*100, 0, TX_WHITE);
+     48:       }
+     49: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 25 2025 09:21:49, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 25 2025 09:22:11
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13772, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {100, 0, 174, 129} не полностью лежит внутри изображения-источника {0, 0, 74, 129}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1B4C (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h:13771 bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13771:
+
+  13769:         {
+  13770: $       SetLastError (ERROR_INVALID_DATA);
+=>13771: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13772:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13773:         }
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:47:
+
+     45:       void draw()
+     46:       {
+=>   47:         txTransparentBlt(txDC(), x, y, 74, 129 ,image, n_cadr*100, 0, TX_WHITE);
+     48:       }
+     49: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 25 2025 09:31:08, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 25 2025 09:31:31
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13772, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {100, 0, 174, 129} не полностью лежит внутри изображения-источника {0, 0, 74, 129}, функция txTransparentBlt() работать не будет.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1B4C (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h:13771 bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13771:
+
+  13769:         {
+  13770: $       SetLastError (ERROR_INVALID_DATA);
+=>13771: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13772:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13773:         }
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:47:
+
+     45:       void draw()
+     46:       {
+=>   47:         txTransparentBlt(txDC(), x, y, 74, 129 ,image, n_cadr*100, 0, TX_WHITE);
+     48:       }
+     49: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 25 2025 09:31:08, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 25 2025 09:31:30
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13772, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {100, 0, 174, 129} не полностью лежит внутри изображения-источника {0, 0, 74, 129}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x13E4 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h:13771 bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13771:
+
+  13769:         {
+  13770: $       SetLastError (ERROR_INVALID_DATA);
+=>13771: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13772:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13773:         }
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:47:
+
+     45:       void draw()
+     46:       {
+=>   47:         txTransparentBlt(txDC(), x, y, 74, 129 ,image, n_cadr*100, 0, TX_WHITE);
+     48:       }
+     49: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 25 2025 09:33:43, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 25 2025 09:34:06
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13772, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {100, 0, 174, 129} не полностью лежит внутри изображения-источника {0, 0, 74, 129}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0xD7C (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h:13771 bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13771:
+
+  13769:         {
+  13770: $       SetLastError (ERROR_INVALID_DATA);
+=>13771: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13772:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13773:         }
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:47:
+
+     45:       void draw()
+     46:       {
+=>   47:         txTransparentBlt(txDC(), x, y, 74, 129 ,image, n_cadr*100, 0, TX_WHITE);
+     48:       }
+     49: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 25 2025 09:34:57, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 25 2025 09:35:20
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13772, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {74, 0, 148, 129} не полностью лежит внутри изображения-источника {0, 0, 74, 129}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1204 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h:13771 bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13771:
+
+  13769:         {
+  13770: $       SetLastError (ERROR_INVALID_DATA);
+=>13771: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13772:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13773:         }
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:47:
+
+     45:       void draw()
+     46:       {
+=>   47:         txTransparentBlt(txDC(), x, y, 74, 129 ,image, n_cadr*74, 0, TX_WHITE);
+     48:       }
+     49: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 25 2025 09:36:45, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 25 2025 09:37:08
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13772, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {74, 0, 148, 129} не полностью лежит внутри изображения-источника {0, 0, 74, 129}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x19D0 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h:13771 bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13771:
+
+  13769:         {
+  13770: $       SetLastError (ERROR_INVALID_DATA);
+=>13771: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13772:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13773:         }
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:47:
+
+     45:       void draw()
+     46:       {
+=>   47:         txTransparentBlt(txDC(), x, y, 74, 129 ,image, n_cadr*74, 0, TX_WHITE);
+     48:       }
+     49: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 25 2025 09:40:34, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 25 2025 09:40:57
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13772, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {74, 0, 148, 129} не полностью лежит внутри изображения-источника {0, 0, 74, 129}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1AA4 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h:13771 bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13771:
+
+  13769:         {
+  13770: $       SetLastError (ERROR_INVALID_DATA);
+=>13771: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13772:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13773:         }
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:47:
+
+     45:       void draw()
+     46:       {
+=>   47:         txTransparentBlt(txDC(), x, y, 74, 129 ,image, n_cadr*74, 0, TX_WHITE);
+     48:       }
+     49: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 25 2025 09:42:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 25 2025 09:43:17
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13772, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 222, 129} не полностью лежит внутри изображения-источника {0, 0, 74, 129}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0xCC4 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h:13771 bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13771:
+
+  13769:         {
+  13770: $       SetLastError (ERROR_INVALID_DATA);
+=>13771: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13772:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13773:         }
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:47:
+
+     45:       void draw()
+     46:       {
+=>   47:         txTransparentBlt(txDC(), x, y, 222, 129 ,image, n_cadr*74, 0, TX_WHITE);
+     48:       }
+     49: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 25 2025 09:45:04, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 25 2025 09:45:26
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13772, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {74, 0, 148, 129} не полностью лежит внутри изображения-источника {0, 0, 74, 129}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x10B8 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h:13771 bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13771:
+
+  13769:         {
+  13770: $       SetLastError (ERROR_INVALID_DATA);
+=>13771: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13772:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13773:         }
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:47:
+
+     45:       void draw()
+     46:       {
+=>   47:         txTransparentBlt(txDC(), x, y, 74, 129 ,image, n_cadr*74, 0, TX_WHITE);
+     48:       }
+     49: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 25 2025 09:47:56, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 25 2025 09:48:29
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13772, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {74, 0, 148, 129} не полностью лежит внутри изображения-источника {0, 0, 74, 129}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x11D0 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h:13771 bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13771:
+
+  13769:         {
+  13770: $       SetLastError (ERROR_INVALID_DATA);
+=>13771: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13772:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13773:         }
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:46:
+
+     44:       void draw()
+     45:       {
+=>   46:         txTransparentBlt(txDC(), x, y, 74, 129 ,image, n_cadr*74, 0, TX_WHITE);
+     47:       }
+     48: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Feb 27 2025 09:22:15, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 27 2025 09:22:38
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe,
+
+ВНЕЗАПНО: Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x00422A20 в модуле C:\Рубцов Александр\izi game\bin\Debug\izi game.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1BF8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13728:
+
+  13726: $   if (!height) height = size.y;  //-V550
+  13727: 
+=>13728: $   return txGDI (!!(Win32::BitBlt (destImage,   ROUND (xDest),   ROUND (yDest),   ROUND (width), ROUND (height),
+  13729:                                     sourceImage, ROUND (xSource), ROUND (ySource), operation)), destImage);
+  13730:     }
+
+# 1 in int main() at C:\Рубцов Александр\izi game\main.cpp:176:
+
+    174: 
+    175:             txBitBlt(txDC(), 0, 0, 1500, 750, Fon);
+=>  176:             txBitBlt(txDC(), 0, 0, 300000000000, 800, glaw);
+    177: 
+    178: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Mar  6 2025 09:56:18, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Mar 06 2025 09:56:41
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe,
+
+ВНЕЗАПНО: signal (8, 0x00): SIGFPE: Грубая ошибка в вычислениях. 
+
+Недопустимая операция с плавающей точкой.
+
+#1: Исключение EXCEPTION_FLT_INVALID_OPERATION (0xC0000090) при выполнении кода по адресу 0x00422A20 в модуле C:\Рубцов Александр\izi game\bin\Debug\izi game.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0x1BF8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13728:
+
+  13726: $   if (!height) height = size.y;  //-V550
+  13727: 
+=>13728: $   return txGDI (!!(Win32::BitBlt (destImage,   ROUND (xDest),   ROUND (yDest),   ROUND (width), ROUND (height),
+  13729:                                     sourceImage, ROUND (xSource), ROUND (ySource), operation)), destImage);
+  13730:     }
+
+# 1 in int main() at C:\Рубцов Александр\izi game\main.cpp:176:
+
+    174: 
+    175:             txBitBlt(txDC(), 0, 0, 1500, 750, Fon);
+=>  176:             txBitBlt(txDC(), 0, 0, 300000000000, 800, glaw);
+    177: 
+    178: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Mar  6 2025 09:56:18, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Mar 06 2025 09:56:40
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005072FC (32-bit), Flags: CMdRe0, Thread: 0xE74 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:46:
+
+     44:       void draw()
+     45:       {
+=>   46:         txTransparentBlt(txDC(), x, y, 98, 172 ,image, n_cadr*98, 0, TX_WHITE);
+     47:       }
+     48: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Mar  6 2025 10:22:42, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Mar 11 2025 09:13:50
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13772, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 73, 143} не полностью лежит внутри изображения-источника {0, 0, 143, 142}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x1974 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h:13771 bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13771:
+
+  13769:         {
+  13770: $       SetLastError (ERROR_INVALID_DATA);
+=>13771: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13772:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13773:         }
+
+# 1 in void Box::draw() at C:\Рубцов Александр\izi game\main.cpp:114:
+
+    112:     void draw()
+    113:       {
+=>  114:         txTransparentBlt(txDC(), x, y, w, h ,image, 0, 0, TX_WHITE);
+    115:       }
+    116: };
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Mar 27 2025 10:11:54, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Mar 27 2025 10:12:15
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0xABC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Done::draw() at C:\Рубцов Александр\izi game\main.cpp:48:
+
+     46:       {
+     47:         if(visible==true)
+=>   48:         txTransparentBlt(txDC(), x, y, 98, 172 ,image, n_cadr*98, 0, TX_WHITE);
+     49:       }
+     50: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Apr  1 2025 09:49:31, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Apr 01 2025 09:49:55
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13751, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005082FC (32-bit), Flags: CMdRe0, Thread: 0x1498 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13751:
+
+  13749: 
+  13750: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13751: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13752: 
+  13753:     // Это автоматическое определение размеров картинки (точнее, HDC источника - source) с помощью txGetExtent().
+
+# 1 in void Box::draw() at C:\Рубцов Александр\izi game\main.cpp:114:
+
+    112:     void draw()
+    113:       {
+=>  114:         txTransparentBlt(txDC(), x, y, w, h ,image, 0, 0, TX_WHITE);
+    115:       }
+    116: };
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Apr  1 2025 09:51:38, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Apr 01 2025 09:52:01
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Рубцов Александр\izi game\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13772, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 148, 141} не полностью лежит внутри изображения-источника {0, 0, 73, 143}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRe0, Thread: 0xFD8 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h:13771 bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13771:
+
+  13769:         {
+  13770: $       SetLastError (ERROR_INVALID_DATA);
+=>13771: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13772:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13773:         }
+
+# 1 in void Box::draw() at C:\Рубцов Александр\izi game\main.cpp:118:
+
+    116:     void draw()
+    117:       {
+=>  118:         txTransparentBlt(txDC(), x, y, w, h ,image, 0, 0, TX_WHITE);
+    119:       }
+    120: };
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Apr 17 2025 09:16:41, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Apr 17 2025 09:17:06
+
+Run file:	C:\Рубцов Александр\izi game\bin\Debug\izi game.exe
+Directory:	C:\Рубцов Александр\izi game
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Done Characterization\bin\Debug\izi game.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13722, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400], Instance: 0x005092FC (32-bit), Flags: CMdRe0, Thread: 0x15FC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at c:\codeblocks\codeblocks\mingw\include\txlib.h:13722:
+
+  13720:     {
+  13721: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13722: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13723: 
+  13724: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at C:\izingame-main\main.cpp:279:
+
+
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 173, Date: 2024-06-23 22:37:05 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Apr 24 2025 09:01:40, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Apr 24 2025 09:38:42
+
+Run file:	C:\Done Characterization\bin\Debug\izi game.exe
+Directory:	C:\Done Characterization
+
+--------------------------------------------------
